@@ -31,7 +31,7 @@ jobs:
     steps:
       - name: Checkout
         run: |
-          git clone https://github.com/donggua1118/Action.git ~/Scripts
+          git clone https://github.com/donggua1118/Action.git ~/Action
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
         with:
@@ -45,7 +45,7 @@ jobs:
       - name: '运行 【B】'
         if: env.bububaotokenVal
         run: |
-          cd ~/Scripts
+          cd ~/Action
           node Task/4bububao.js
         env:
           bububaotokenVal: ${{ secrets.bububaotokenVal }}
