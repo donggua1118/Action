@@ -42,7 +42,7 @@ jobs:
           npm install -g npm
           npm update
 
-      - name: '运行 【B】'
+      - name: '运行 【步步宝】'
         if: env.bububaotokenVal
         run: |
           cd ~/Action
