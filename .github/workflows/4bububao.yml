@@ -10,8 +10,8 @@ on:
      - cron: '35 0-16/2 * * *'
   watch:
     types: started
-#env:
-  #TZ: Asia/Shanghai
+env:
+  TZ: Asia/Shanghai
 
 jobs:
   build:
@@ -31,7 +31,7 @@ jobs:
     steps:
       - name: Checkout
         run: |
-          git clone https://github.com/adw2s/Action.git ~/Scripts
+          git clone https://github.com/donggua1118/Action.git ~/Scripts
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
         with:
